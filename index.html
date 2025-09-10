@@ -8,17 +8,29 @@
       height: 100%;
       margin: 0;
       padding: 0;
+      overflow: hidden;
     }
     #pdf-viewer {
       width: 100vw;
       height: 100vh;
       border: none;
+      display: block;
+    }
+    .aviso {
+      text-align: center;
+      font-family: sans-serif;
+      margin-top: 2em;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <!-- Cambia la ruta 'documento.pdf' por la ruta real de tu PDF -->
-  <"https://docs.google.com/gview?url=https://luisalves2024.github.io/quijote-inscripcion/quijote-inscripcion.pdf&embedded=true"></iframe>
+  <iframe
+    id="pdf-viewer"
+    src="https://docs.google.com/gview?url=https://luisalves2024.github.io/quijote-inscripcion/quijote-inscripcion.pdf&embedded=true">
+  </iframe>
+  <div class="aviso">
+    Si no ves el PDF, <a href="quijote-inscripcion.pdf" target="_blank">pulsa aquí para descargarlo</a>.
+  </div>
 </body>
-
 </html>
